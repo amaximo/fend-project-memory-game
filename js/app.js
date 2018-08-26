@@ -5,9 +5,14 @@
  * of each card because the player will be matching them. From the original html,
  * we moved the list of cards to here to create an array.
  */
-const icons = ["fa fa-youtube-play", "fa fa-youtube-play", "fa fa-twitter", "fa fa-twitter",
-"	fa fa-twitch", "	fa fa-twitch", "fa fa-tumblr-square", "fa fa-tumblr-square", "fa fa-steam-square", "fa fa-steam-square",
-"fa fa-reddit-alien", "fa fa-reddit-alien", "fa fa-instagram", "fa fa-instagram", "fa fa-github-alt", "fa fa-github-alt"]
+const icons = ["fa fa-youtube-play", "fa fa-youtube-play",
+              "fa fa-twitter", "fa fa-twitter",
+              "fa fa-twitch", "fa fa-twitch",
+              "fa fa-tumblr-square", "fa fa-tumblr-square",
+              "fa fa-steam-square", "fa fa-steam-square",
+              "fa fa-reddit-alien", "fa fa-reddit-alien",
+              "fa fa-instagram", "fa fa-instagram",
+              "fa fa-github-alt", "fa fa-github-alt"]
 
 //Selected the parent deck from index.html. This contained all the cards from the html code
 const cardsContainer = document.querySelector(".deck");
@@ -43,7 +48,7 @@ let matchedCards = [];
  * clicks on a card.
  */
 function init() {
-  shuffle(icons); //Calls icons to shuffle all cards (from shuffle fxn) before game starts
+  //shuffle(icons); //Calls icons to shuffle all cards (from shuffle fxn) before game starts
 
   for(let i = 0; i < icons.length; i++) {        //this will loop through all the available cards
     const card = document.createElement("li");   //created elements
