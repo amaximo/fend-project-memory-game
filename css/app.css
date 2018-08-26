@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/woodenbg.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
     font-family: 'Verdana', cursive;
 
 }
@@ -30,31 +30,42 @@ body {
 }
 
 h1 {
-    font-family: 'Verdana', sans-serif;
-    font-size: 300;
+  font-family: 'Cookie', cursive;
+  /*font-family: 'Verdana', sans-serif;*/
+  font-size: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
 }
+
+.howtoplay {
+  width: 600px;
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: center;
+  margin-top: auto;
+}
+
 
 /*
  * Styles for the deck of cards
  */
 
 .deck {
-    width: 550px;
-    min-height: 550px;
+    width: 500px;
+    min-height: 500px;
     background: linear-gradient(160deg, #fffacd 0%, #ff69b4 100%);
-    padding: 32px;
+    padding: 30px;
     border-radius: 90px;
-    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    box-shadow: 10px 10px 15px 0 rgba(46, 61, 73, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 4em;
 }
 
 .deck .card {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     background: #000000;
     font-size: 0;
     color: #ffffff;
@@ -85,6 +96,9 @@ h1 {
 .deck .card.match {
     cursor: default;
     background: #02ccba;
+    border-color: #ffffff;
+    border-width: medium;
+    border-style: dotted;
     font-size: 33px;
 }
 
@@ -96,11 +110,16 @@ h1 {
  * Styles for the Score Panel
  */
 
-.score-panel {
-    text-align: left;
-    width: 400px;
-    margin-bottom: 10px;
-}
+ .score-panel {
+   width: 550px;
+   min-height: 10px;
+   background: linear-gradient(160deg, #fffacd 0%, #ff69b4 100%);
+   padding: 10px;
+   border-radius: 100px;
+   box-shadow: 5px 10px 10px 0 rgba(46, 61, 73, 0.5);
+   text-align: center;
+   margin-bottom: 5px;
+ }
 
 .score-panel .stars {
     margin: 0;
@@ -115,7 +134,7 @@ h1 {
 }
 
 .score-panel .restart {
-    float: right;
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -124,8 +143,6 @@ h1 {
 /*
  * Styles for congratulations modal from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
  */
-
-
  .overlay {
 	position: fixed;
 	top: 0;
@@ -155,12 +172,15 @@ h1 {
 }
 
 .popup h2 {
+  font-family: 'Cookie', cursive;
   overflow: auto;
   text-align: center;
   position: center;
 	margin-top: 0;
 	color: #02ccba;
-	font-family: Verdana, Arial, sans-serif;
+  font-family: 'Cookie', cursive;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .popup .close {
@@ -181,6 +201,7 @@ h1 {
 
 .popup .content-1,
 .content-2 {
+  font-family: 'Kosugi Maru', sans-serif;
 	max-height: 30%;
 	overflow: auto;
 	text-align: center;
@@ -198,18 +219,17 @@ h1 {
 #play-again {
   text-align: center;
   cursor: pointer;
-	background-color: #02b3e4;
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
 	display: block;
 	margin: 0 auto;
 	width: 50%;
   opacity: 0.8;
-	font-family: 'Verdana', cursive;
-	color: #000000;
+  font-family: 'Cookie', cursive;
+  font-size: 30px;
+	color: #ffffff;
 	border-radius: 10px;
   transition: all 0.2s ease-in-out;
-
   background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
   box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
 }

@@ -21,7 +21,6 @@ const cardsContainer = document.querySelector(".deck");
 //Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
-
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
@@ -29,7 +28,6 @@ function shuffle(array) {
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     }
-
     return array;
 }
 
@@ -45,7 +43,6 @@ let matchedCards = [];
  * clicks on a card.
  */
 function init() {
-
   //shuffle(icons); //Calls icons to shuffle all cards (from shuffle fxn) before game starts
 
   for(let i = 0; i < icons.length; i++) {        //this will loop through all the available cards
