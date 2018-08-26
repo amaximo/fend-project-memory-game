@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/woodenbg.png'); /* Background pattern from Subtle Patterns */
     font-family: 'Verdana', cursive;
 
 }
@@ -39,11 +39,11 @@ h1 {
  */
 
 .deck {
-    width: 580px;
-    min-height: 580px;
-    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    width: 550px;
+    min-height: 550px;
+    background: linear-gradient(160deg, #fffacd 0%, #ff69b4 100%);
     padding: 32px;
-    border-radius: 10px;
+    border-radius: 90px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
     display: flex;
     flex-wrap: wrap;
@@ -53,12 +53,12 @@ h1 {
 }
 
 .deck .card {
-    height: 125px;
-    width: 125px;
-    background: #2e3d49;
+    height: 100px;
+    width: 100px;
+    background: #000000;
     font-size: 0;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 40px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ h1 {
 
 .deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
+    background: #8470ff;
     cursor: default;
 }
 
@@ -98,7 +98,7 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 400px;
     margin-bottom: 10px;
 }
 
