@@ -48,7 +48,7 @@ let matchedCards = [];
  * clicks on a card.
  */
 function init() {
-  //shuffle(icons); //Calls icons to shuffle all cards (from shuffle fxn) before game starts
+  shuffle(icons); //Calls icons to shuffle all cards (from shuffle fxn) before game starts
 
   for(let i = 0; i < icons.length; i++) {        //this will loop through all the available cards
     const card = document.createElement("li");   //created elements
