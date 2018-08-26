@@ -46,6 +46,9 @@ let matchedCards = [];
  * Then a for loop was created to loop through all the available cards in the deck.
  * Lastly, the click(card) fxn was called so an eventLister is set when the player
  * clicks on a card.
+ *
+ * References from Yahya Elharony - "Udacity - Study Jam | Fend - P3 Memory Game" (https://www.youtube.com/watch?v=G8J13lmApkQ)
+ *
  */
 function init() {
   shuffle(icons); //Calls icons to shuffle all cards (from shuffle fxn) before game starts
@@ -74,6 +77,7 @@ function init() {
 
 /*
  * GAME CLICK EVENT
+ * References from Yahya Elharony (video linked above)
  */
  let firstClick = true;
 function click(card) {
@@ -111,6 +115,7 @@ function click(card) {
 
 /*
  * COMPARING PLAYER SELECTED CARDS
+ * References from Yahya Elharony (video linked above)
  */
 function compare(currentCard, previousCard) {
 
